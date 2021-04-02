@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/acti_chitietmonan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/custom_background_image_chitietmonan"
+            android:gravity="center">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/img_monan"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/food_comchien"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_tenmonan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên món ăn"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_close_white"/>
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Giá: "
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txt_giatien"
+            android:layout_weight="0.55"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="100,000 đ"
+            android:textSize="22sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txt_noti_fv_food"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="Yêu thích"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#ED8A8A"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:id="@+id/btn_yeuthich"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_not_favorite"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/btn_xoasl"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:layout_toLeftOf="@id/txt_soluong"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_remove" />
+
+
+        <EditText
+            android:id="@+id/txt_soluong"
+            android:text="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btn_themsl"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:layout_toRightOf="@id/txt_soluong"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_plus" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_ThemMon"
+        android:layout_gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="Thêm món"
+        android:background="@drawable/red_button"/>
+</LinearLayout>

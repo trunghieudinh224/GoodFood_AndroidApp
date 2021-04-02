@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/custom_item_gridview_fvfood">
+
+    <RelativeLayout
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/img_fvfood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/logo_app"
+            android:visibility="invisible"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/img_waiting_fvfood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_loading_avatar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Yêu thích"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textColor="#FFFFFF"
+            android:background="#f52f2f"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingTop="3dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.2"
+            android:paddingTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_ten_fvfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="50dp"
+                android:text="Tên món ăn"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Cơm phần"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"/>-->
+
+            <TextView
+                android:id="@+id/txt_giatien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20,000 đ"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_danhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="right"
+            android:text="Lượt đặt hàng: 50"
+            android:layout_marginRight="5dp"
+            android:textSize="13sp"
+            android:textColor="#8F8484"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GoodFood</string>
+
+    <string-array name="voucher_type">
+        <item>Normal member</item>
+        <item>VIP member</item>
+    </string-array>
+</resources>

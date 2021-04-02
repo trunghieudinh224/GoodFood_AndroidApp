@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorLine">#CCCCCC</color>
+    <color name="colorBackground">#F6F6F6</color>
+    <color name="color_type_member">#F3F312</color>
+</resources>

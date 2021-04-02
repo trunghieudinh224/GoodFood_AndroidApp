@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.goodfood">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Webview"
+            android:screenOrientation="portrait" >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW"/>-->
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--                <category android:name="android.intent.category.BROWSABLE"/>-->
+<!--                <data android:scheme="http"/>-->
+<!--                <data android:scheme="https"/>-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".ThongTinHoTro"></activity>
+        <activity
+            android:name=".TichDiem"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TheoDoiDonHang"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimKiemMonAn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChiTietHoaDon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LichSuDonHang"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViVoucher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpenApp"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ChinhSachApp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThongTinTaiKhoan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaiKhoan"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DangKy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DangNhap"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

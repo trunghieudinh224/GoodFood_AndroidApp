@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TichDiem"
+    android:background="@color/colorBackground">
+    <include layout="@layout/toobar_tttk"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EC3939">
+
+                <LinearLayout
+                    android:id="@+id/area_gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/txt_sodon_tichluy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:baselineAligned="false"
+                        android:drawableLeft="@drawable/ic_donhang_tichluy"
+                        android:drawablePadding="6dp"
+                        android:text="4/5"
+                        android:textColor="#FFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_step_textview_tichdiem">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="5dp"
+                            android:background="@drawable/inside_background_step_textview_tichdiem"
+                            android:text="Tích lũy 5 đơn hàng để nhận quà "
+                            android:textColor="#FFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/gif_position1"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:src="@drawable/ic_position_step_tichdiem"
+                                android:visibility="invisible"/>
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/img_step1"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_step_notfinish"
+                                app:civ_border_color="#716868"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/txt_step1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:layout_centerInParent="true"
+                                android:textColor="#FFF"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                        <ImageView
+                            android:id="@+id/ic_step_array_tichdiem1"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginRight="-3dp"
+                            android:src="@drawable/ic_step_tichdiem_not_finish"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/gif_position2"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:src="@drawable/ic_position_step_tichdiem"
+                                android:visibility="invisible"/>
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/img_step2"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_step_notfinish"
+                                android:layout_centerInParent="true"
+                                app:civ_border_color="#716868"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/txt_step2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:layout_centerInParent="true"
+                                android:textColor="#FFF"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ic_step_array_tichdiem2"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginRight="-3dp"
+                            android:src="@drawable/ic_step_tichdiem_not_finish"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/gif_position3"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:src="@drawable/ic_position_step_tichdiem"
+                                android:visibility="invisible"/>
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/img_step3"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_step_notfinish"
+                                app:civ_border_color="#716868"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/txt_step3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3"
+                                android:layout_centerInParent="true"
+                                android:textColor="#FFF"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ic_step_array_tichdiem3"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginRight="-3dp"
+                            android:src="@drawable/ic_step_tichdiem_not_finish"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/gif_position4"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:src="@drawable/ic_position_step_tichdiem"
+                                android:visibility="invisible"/>
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/img_step4"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_step_notfinish"
+                                app:civ_border_color="#716868"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/txt_step4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4"
+                                android:layout_centerInParent="true"
+                                android:textColor="#FFF"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ic_step_array_tichdiem4"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginRight="-3dp"
+                            android:src="@drawable/ic_step_tichdiem_not_finish"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/gif_position5"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:src="@drawable/ic_position_step_tichdiem"
+                                android:visibility="invisible"/>
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/img_step5"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_step_notfinish"
+                                app:civ_border_color="#716868"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/txt_step5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5"
+                                android:layout_centerInParent="true"
+                                android:textColor="#FFF"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginBottom="-20dp">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/img_gift_open"
+                            android:layout_width="190dp"
+                            android:layout_height="160dp"
+                            android:src="@drawable/ic_gift_not_open"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/img_gift_not_open"
+                            android:layout_width="190dp"
+                            android:layout_height="160dp"
+                            android:src="@drawable/ic_gift_default"/>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_loading_gift"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_gift_not_open"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/colorLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:text="Điều kiện nhận quà"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:text="\t\tMỗi lần bạn hoàn thành một đơn hàng sẽ được hệ thống lưu vào thông tin tích lũy, sau khi hoàn tất đủ năm đơn hàng sẽ được nhận một phần quà từ GoodFood."
+                    android:textColor="#000000"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    android:text="\t\tCác phần thưởng đang chờ đón bạn, nhanh tay đặt hàng để có thêm nhiều phần thưởng nhé !"
+                    android:textColor="#000000"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:justificationMode="inter_word"
+                    android:text="\t\tHệ thống tích lũy chỉ lưu trong tháng."
+                    android:textColor="#000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:text="Ưu đãi thành viên"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="78dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/ic_vip_type"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:paddingTop="7dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VIP member (tổng đơn tích lũy trên 50)"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hotline hỗ trợ"
+                            android:textColor="#000000"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-3dp"
+                            android:text="Ưu đãi từ các chương trình khuyến mãi"
+                            android:textColor="#000000"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="78dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/ic_member_type"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:paddingTop="11dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Member"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ưu đãi từ các chương trình khuyến mãi"
+                            android:textColor="#000000"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

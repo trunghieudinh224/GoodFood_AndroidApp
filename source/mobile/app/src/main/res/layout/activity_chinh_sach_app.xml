@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".ChinhSachApp">
+    <include layout="@layout/toobar_tttk"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐIỀU KHOẢN SỬ DỤNG"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="I. Những quy định chung:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="Tên ứng dụng của Sàn cung cấp Dịch vụ Thương mại Điện tử: GoodFood
+                \nĐường dẫn tải Ứng dụng trên Cửa hàng ứng dụng:
+\nApp Store (cho hệ điều hành iOS): https://itunes.apple.com/app/id1458845623?mt=8
+\nPlay Store (cho hệ điều hành Android OS):https://play.google.com/store/apps/details?id=com.woowahan.vn.baemin
+\nNgười dùng là các cá nhân, tổ chức, có nhu cầu giao nhận đồ ăn/đồ uống trực tuyến. Người dùng phải đăng ký theo quy định của pháp luật và được công nhận bởi Ban điều hành Công Ty TNHH WOOWA BROTHERS VIỆT NAM.
+\nĐồ ăn/đồ uống giao dịch trên BAEMIN đáp ứng điều kiện đầy đủ về an toàn thực phẩm và các quy định pháp luật.
+\nCác nhà hàng chịu hoàn toàn trách nhiệm đối với tất cả các dịch vụ và sản phẩm do chính họ cung cấp cho Khách hàng, đã được đặt hàng thông qua việc sử dụng các dịch vụ do BAEMIN cung cấp.
+\nKhi Người dùng và/hoặc Nhà hàng truy cập BAEMIN để yêu cầu và/hoặc cung cấp Dịch vụ, Người dùng và/hoặc Nhà hàng đã đương nhiên đồng ý tuân thủ và bị ràng buộc bởi quy định hoạt động trên BAEMIN.
+\nKhi tham gia BAEMIN, Người dùng và Nhà hàng phải tự tìm hiểu về trách nhiệm pháp lý của mình đối với luật pháp hiện hành của Việt Nam và cam kết thực hiện đúng nội dung trong Quy định của BAEMIN."
+                android:textColor="#444444"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="II. Chính sách và tài khoản người dùng:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="1. Bằng việc đăng ký và sử dụng ứng dụng BAEMIN, khách hàng cam đoan rằng bạn đủ mười tám (18) tuổi. Khách hàng đảm bảo có đầy đủ hành vi dân sự để thực hiện các giao dịch theo quy định hiện hành của pháp luật Việt Nam.
+\n2. Khách hàng cam kết và thực hiện cung cấp thông tin chính xác.
+\n3. Mỗi khách hàng chỉ được tạo một (01) tài khoản cho mục đích sử dụng cá nhân.
+\n4. Khách hàng không chia sẻ thông tin tài khoản (tên truy cập và mật khẩu), cho người khác sử dụng tài khoản BAEMIN, hoặc chuyển nhượng tài khoản cho bất kỳ ai khác mà không có sự cho phép của Công ty.
+\n5. Khách hàng không được sử dụng BAEMIN nếu tài khoản của khách hàng đã bị vô hiệu hóa vì vi phạm Điều khoản hoặc Chính sách của Công ty.
+\n6. Khách hàng chỉ đăng nhập vào một thiết bị cùng một lúc.
+\n7. Một người không thể vừa là Đối tác giao hàng, vừa là Khách hàng trong cùng một giao dịch.
+\n8. Công ty bảo lưu quyền khóa hoặc từ chối truy cập vào tài khoản, và/hoặc hạn chế những tính năng trong BAEMIN, mà không ảnh hưởng đến các quyền và biện pháp khắc phục khác của mình:
+\n\t\t\t1.nếu Công ty cho rằng, theo toàn quyền quyết định của Công ty, đã có sự vi phạm đối với bất kỳ điều khoản nào trong Điều Khoản Sử Dụng này;
+\n\t\t\t2.đang trong quá trình điều tra, hoặc nghi vấn hành động gian lận;
+\n\t\t\tnếu Điều Khoản Sử Dụng này bị chấm dứt vì bất kỳ lý do nào; hoặc
+\n\t\t\tvào bất cứ thời điểm nào khác theo quyết định hợp lý của Công ty.
+\n9. Tài khoản bị khóa sẽ chỉ được cấp lại sau khi xác thực và/hoặc theo toàn quyền quyết định của Công ty."
+                android:textColor="#444444"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

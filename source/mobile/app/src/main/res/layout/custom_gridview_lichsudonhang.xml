@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_item_gridview_lichsudonhang">
+
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+<!--        <TextView-->
+<!--            android:background="#BA1414"-->
+<!--            android:layout_width="4dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginRight="15dp"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/txt_tinhtrang_lichsudon"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Đang xử lý"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txt_ngaydat_lichsudon"
+                    android:layout_weight="1.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="20:20 10/10/2020"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:paddingRight="2dp"
+                    android:gravity="right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_ic_item_lichsudon"
+                    android:layout_width="90dp"
+                    android:layout_height="105dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/logo_app"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/txt_slmon_lichsudon"
+                            android:layout_weight="0.65"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3 món"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_weight="0.01"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="#000000"/>
+
+                        <TextView
+                            android:id="@+id/txt_tongtien_lichsudon"
+                            android:layout_weight="2.34"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Tổng tiền: 12,000,000 đ"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_diachi_lichsudon"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:text="Nơi nhận: 429 lô b4 chung cư phường 3 quận 4, thành phố hồ chí minh"/>
+
+                    <Button
+                        android:id="@+id/btn_xemchitiet_lichsudon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/red_button"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Chi tiết đơn hàng"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

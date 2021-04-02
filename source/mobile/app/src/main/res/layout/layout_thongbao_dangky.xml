@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_app"
+        android:translationZ="90dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/radius_layout">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký tài khoản thành công"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="Tạo tài khoản"
+            android:background="@drawable/red_button"/>
+    </LinearLayout>
+
+</LinearLayout>

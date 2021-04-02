@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".ViVoucher">
+    <include layout="@layout/toobar_tttk"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/btn_thanhvien"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:background="#FFFFFF"
+                    android:text="Thành viên"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txt_line_thanhvien"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#E43A3A"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:layout_weight="0.003"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#000000"/>-->
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/btn_canhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:background="#FFFFFF"
+                    android:text="Cá nhân"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/txt_line_canhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#E43A3A"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <GridView
+                android:id="@+id/listview_vi_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:verticalSpacing="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/area_loading_wait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="50dp">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_loading_wait"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_loading_goodfood"/>
+
+                <TextView
+                    android:id="@+id/txt_khong_voucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Không tìm thấy voucher nào"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

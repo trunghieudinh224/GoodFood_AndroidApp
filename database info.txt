@@ -1,0 +1,5 @@
+Tài khoản gmail để xem database:
+tk: trunghieuprojectdb@gmail.com
+pass: dinhtrunghieu2010
+
+-Nếu đăng nhập có yêu cầu xác thực thì có thể xác thực qua số điện thoại 0902622737.
